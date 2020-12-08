@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>example</groupId>
-	<artifactId>play-with-vertx</artifactId>
+	<artifactId>vertx-real-time-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
@@ -18,12 +18,15 @@
 			<artifactId>vertx-core</artifactId>
 			<version>3.9.4</version>
 		</dependency>
+
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
 			<version>1.2.3</version>
 		</dependency>
 	</dependencies>
+
+
 
 
 </project>
