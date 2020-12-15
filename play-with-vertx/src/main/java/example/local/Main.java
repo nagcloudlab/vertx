@@ -16,6 +16,13 @@ public class Main {
 		vertx.deployVerticle(new Listener());
 		vertx.deployVerticle(new HttpServer());
 		vertx.deployVerticle(new SensorData());
+		vertx.deployVerticle("javascript-verticle.js", ar -> {
+			if (ar.succeeded()) {
+				System.out.println("javascript verticle deployed..");
+			} else {
+				System.out.println(ar.cause());
+			}
+		});
 
 	}
 
