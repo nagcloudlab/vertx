@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: txr-service-config
+data:
+  application.properties: |-
+    service.name=txr-service (cloud)
